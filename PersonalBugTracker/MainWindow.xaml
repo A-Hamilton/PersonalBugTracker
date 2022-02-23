@@ -9,6 +9,7 @@
         Background="#36393F"
         MinWidth="400"
         MinHeight="400"
+        AllowDrop="True"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip">
@@ -44,14 +45,11 @@
             </Grid>
         </Border>
 
-        <Grid Background="#2F3136" Grid.Row="1">
+        <Grid x:Name="todoListGrid" Background="#2F3136" Grid.Row="1">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="25"/>
-                <RowDefinition/>
+                <RowDefinition x:Name="startRow" Height="25"/>
             </Grid.RowDefinitions>
-
-            <Button Height="25" Content="dasdawdawd" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#252525" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Grid.Row="2" Click="add" Cursor="Hand"/>
 
             <Button Width="20" Height="20" Content="+" HorizontalAlignment="Right" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="add" Cursor="Hand"/>
             <Label Content="Todo List" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="Gray" FontWeight="SemiBold"/>
@@ -85,6 +83,6 @@
         </Grid>
 
     </Grid>
-    
-    
+
+
 </Window>

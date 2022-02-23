@@ -26,7 +26,7 @@ namespace PersonalBugTracker
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
