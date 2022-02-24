@@ -11,7 +11,7 @@
         AllowsTransparency="True"
         ResizeMode="CanMinimize">
     
-    <Grid>
+    <Grid x:name="addWindowGrid">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
@@ -37,6 +37,24 @@
                 </StackPanel>
             </Grid>
         </Border>
+            
+            <Grid Background="#2F3136" Grid.Row="1">
+                    <Lagel Content="Name" Foreground="Gray" />
+                    <Textbox x:name="dataName" Text="..." minHeight="25" Foreground="Gray" Background="Transparent"/>
+            </Grid>
+            
+            <Grid Background="#2F3136" Grid.Row="2">
+                    <Lagel Content="Additional Information" Foreground="Gray"/>
+                    <Textbox x:name="dataName" Text="..." minHeight="50" />
+            </Grid>
+            
+            <Grid Background="#2F3136" Grid.Row="2">
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button Width="20" Height="20" Margin="20, 0 0 0" Content="Save" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="SaveData_Click"/>
+               <Button Width="20" Height="20" Content="Cancel" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="Exit_Click"/>
+                    </StackPanel>
+                            
+              </Grid>
 
     </Grid>
 </Window>
