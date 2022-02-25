@@ -11,7 +11,7 @@
         AllowsTransparency="True"
         ResizeMode="CanMinimize">
     
-    <Grid x:name="addWindowGrid">
+    <Grid x:Name="addWindowGrid">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
@@ -39,22 +39,23 @@
         </Border>
             
             <Grid Background="#2F3136" Grid.Row="1">
-                    <Lagel Content="Name" Foreground="Gray" />
-                    <Textbox x:name="dataName" Text="..." minHeight="25" Foreground="Gray" Background="Transparent"/>
+                    <Label Content="Name" Foreground="Gray" FontWeight="Bold"/>
+            <TextBox x:Name="dataName" Text="..." MinHeight="25" Margin="0, 20, 0, 0" Foreground="Gray" BorderThickness="0" Background="Transparent"/>
             </Grid>
             
             <Grid Background="#2F3136" Grid.Row="2">
-                    <Lagel Content="Additional Information" Foreground="Gray"/>
-                    <Textbox x:name="dataInfo" Text="..." minHeight="50" />
+              <Label Content="Additional Information" Foreground="Gray" FontWeight="Bold"/>
+            <TextBox x:Name="dataInfo" Text="..." MinHeight="50" Margin="0, 20, 0, 0" Foreground="Gray" BorderThickness="0" Background="Transparent"/>
             </Grid>
-            
-            <Grid Background="#2F3136" Grid.Row="3">
-                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button minWidth="40" Height="20" Margin="20, 0 0 0" Content="Save" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="SaveData_Click"/>
-               <Button minWidth="40" Height="20" Content="Cancel" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="Exit_Click"/>
-                    </StackPanel>
-                            
-              </Grid>
+
+        <Grid Background="#2F3136" Grid.Row="3">
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+
+                <Button MinWidth="60" Height="20" Content="Save" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold"/>
+                <Button MinWidth="60" Height="20" Content="Cancel" Margin="10, 0 20 0" Background="Transparent"  BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="Exit_Click"/>
+
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Window>

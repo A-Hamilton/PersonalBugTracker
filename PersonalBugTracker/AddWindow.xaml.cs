@@ -31,15 +31,7 @@ namespace PersonalBugTracker
         
         private void SaveData_Click(object sender, RoutedEvent e)
         {
-            String name = this.dataName;
-            String adata = this.dataInfo;
-            var settings = MongoClientSettings.FromConnectionString("mongodb+srv://Retoggle:<password>@cluster0.d2mcw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
-            var client = new MongoClient(settings);
-            var database = client.GetDatabase("db");
-            var collection = database.getCollection("BT");
-            collection.insertOne("Name", name);
-            collection.insertOne("Additional", adata);
+            
         }
         
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
