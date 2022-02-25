@@ -45,7 +45,7 @@
             
             <Grid Background="#2F3136" Grid.Row="2">
                     <Lagel Content="Additional Information" Foreground="Gray"/>
-                    <Textbox x:name="dataName" Text="..." minHeight="50" />
+                    <Textbox x:name="dataInfo" Text="..." minHeight="50" />
             </Grid>
             
             <Grid Background="#2F3136" Grid.Row="3">
